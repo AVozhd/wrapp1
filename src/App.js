@@ -7,7 +7,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Click this red button</h1>
+        <h1 className="test">Click red button</h1>
+        <div className="alert alert-primary" role="alert">
+          A simple primary alert—check it out!
+        </div>
         <button onClick={this.handleClicked}>Click</button>
       </div>
     )
