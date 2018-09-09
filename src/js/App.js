@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-
-// const App = props => <h1>Hello</h1>
+import FormContainer from './components/container/FormContainer';
 
 class App extends React.Component {
-  handleClicked = evt => console.log('Clicked')
+  state = {
+    counts: 0
+  }
+  counterPlus = (evt) => {
+    this.setState({
+      counts: this.state.counts + 1
+    })
+  }
   render() {
     return (
       <div>
-        <h1 className="test">Click red button</h1>
-        <div className="alert alert-primary" role="alert">
-          A simple primary alert—check it out!
-        </div>
-        <button onClick={this.handleClicked}>Click</button>
+        <FormContainer />
+        <h1 onClick={this.counterPlus}>{this.state.counts}</h1>
       </div>
     )
   }
