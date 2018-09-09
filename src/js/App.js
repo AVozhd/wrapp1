@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 
 // const App = props => <h1>Hello</h1>
 
@@ -17,4 +17,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default App;
